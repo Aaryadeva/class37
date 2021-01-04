@@ -43,7 +43,7 @@ class Game{
            var x=0
            var y
            var displayPosition=130
-           displayPosition+=20
+           
            //for(var p=0;p<allPlayer.length;p++)
            for(var p in allPlayers){
                index=index+1
@@ -59,6 +59,7 @@ class Game{
                else{
                 cars[index-1].shapeColor="black"
                }
+               displayPosition+=20
                textSize(20)
            text(allPlayers[p].name+":"+allPlayers[p].distance,120,displayPosition)
            }
